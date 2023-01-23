@@ -1,8 +1,8 @@
 import {shallowMount} from '@vue/test-utils';  // Vue Test Utils allows you to mount a component without rendering its child components
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from '@/components/Child1.vue'
 
-describe('HelloWorld.vue', () => {
-    it('renders props.msg when passed', () => {
+describe('Child1.vue', () => {
+    it('renders props.msg when passed', async () => {
         const msg = 'new message'
         const wrapper = shallowMount(HelloWorld, {
             propsData: {msg}
